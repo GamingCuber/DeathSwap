@@ -1,0 +1,8 @@
+name: DeathSwap
+version: 1.0
+main: mcplugins.io.github.GamingCuber.DeathSwap.Main
+description: A spigot plugin for doing Dream's deathswap
+
+commands:
+  swap: 
+  player: 
