@@ -1,4 +1,4 @@
-package mcplugins.io.github.GamingCuber.DeathSwap.commands.listeners;
+package mcplugins.io.github.GamingCuber.DeathSwap.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Server;

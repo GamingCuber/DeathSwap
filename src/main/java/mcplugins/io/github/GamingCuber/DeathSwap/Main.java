@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import mcplugins.io.github.GamingCuber.DeathSwap.commands.PlayerCommand;
 import mcplugins.io.github.GamingCuber.DeathSwap.commands.SwapCommand;
-import mcplugins.io.github.GamingCuber.DeathSwap.commands.listeners.DeathListener;
+import mcplugins.io.github.GamingCuber.DeathSwap.listeners.DeathListener;
 import mcplugins.io.github.GamingCuber.DeathSwap.tabcompleter.PlayerTabCompleter;
 import mcplugins.io.github.GamingCuber.DeathSwap.tabcompleter.SwapTabCompleter;
 

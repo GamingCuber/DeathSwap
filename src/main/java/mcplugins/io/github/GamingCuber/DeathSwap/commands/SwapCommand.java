@@ -1,7 +1,5 @@
 package mcplugins.io.github.GamingCuber.DeathSwap.commands;
 
-import java.util.ArrayList;
-
 import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -9,6 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.scheduler.BukkitScheduler;
 
 import mcplugins.io.github.GamingCuber.DeathSwap.Main;
+import mcplugins.io.github.GamingCuber.DeathSwap.tabcompleter.SwapTabCompleter;
 import net.md_5.bungee.api.ChatColor;
 
 public class SwapCommand implements CommandExecutor {
@@ -20,6 +19,7 @@ public class SwapCommand implements CommandExecutor {
 
 		this.plugin = plugin;
 		plugin.getCommand("swap").setExecutor(this);
+		plugin.getCommand("swap").setTabCompleter(new SwapTabCompleter(plugin));
 
 	}
 

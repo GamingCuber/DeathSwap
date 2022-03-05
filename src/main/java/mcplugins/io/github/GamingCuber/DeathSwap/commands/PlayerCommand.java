@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import mcplugins.io.github.GamingCuber.DeathSwap.Main;
+import mcplugins.io.github.GamingCuber.DeathSwap.tabcompleter.PlayerTabCompleter;
 
 public class PlayerCommand implements CommandExecutor {
 
@@ -18,6 +19,7 @@ public class PlayerCommand implements CommandExecutor {
 
 		this.plugin = plugin;
 		plugin.getCommand("player").setExecutor(this);
+		plugin.getCommand("player").setTabCompleter(new PlayerTabCompleter(plugin));
 
 	}
 
