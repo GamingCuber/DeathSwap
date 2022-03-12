@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 
 import mcplugins.io.github.GamingCuber.DeathSwap.Main;
 import mcplugins.io.github.GamingCuber.DeathSwap.tabcompleter.PlayerTabCompleter;
+import net.md_5.bungee.api.ChatColor;
 
 public class PlayerCommand implements CommandExecutor {
 
@@ -32,7 +33,8 @@ public class PlayerCommand implements CommandExecutor {
 			for (int i = 1; i < args.length - 1; i++) {
 
 				plugin.PlayerList.add(Serv.getPlayer(args[i]));
-
+				Serv.broadcastMessage(ChatColor.GREEN + "Added " + plugin.PlayerList.get(i));
+				
 			}
 
 		} else if (FirstArg.equalsIgnoreCase("remove")) {
@@ -41,7 +43,8 @@ public class PlayerCommand implements CommandExecutor {
 			for (int i = 1; i < args.length - 1; i++) {
 
 				RemovedList.add(Serv.getPlayer(args[i]));
-
+				Serv.broadcastMessage(ChatColor.RED + "Removed " + RemovedList.get(i).getName());
+				
 			}
 			plugin.PlayerList.removeAll(RemovedList);
 

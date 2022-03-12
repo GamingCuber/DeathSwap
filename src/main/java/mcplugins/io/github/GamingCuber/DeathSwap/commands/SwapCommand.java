@@ -36,8 +36,7 @@ public class SwapCommand implements CommandExecutor {
 
 				@Override
 				public void run() {
-					// this basically just does the first countdown, before the swap techincally
-					// starts
+					// this basically just does the first countdown, before the swap technically starts
 					int cnt = 10;
 					cnt--;
 					if (cnt == 0) {
